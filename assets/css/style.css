@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --main-color:#FFE6C7;
+    --main-calculator-buttons:#FFA559;
+    --secound-calculator-buttons: #454545;
+    --enphasis-color-buttons:#FF6000;
+}
+
+body {
+    background: var(--main-color);
+    font-family: var(--main-font);
+}
+
+.calculator {
+    width: 22rem;
+    height: 32rem;
+    background: #000;
+    margin: 8% auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav_calculator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: #fff;
+    padding: 5px;
+}
+
+.exit {
+    width: 2.6rem;
+    height: 2.6rem;
+    background: #000;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.exit:hover {
+    background-color: var(--enphasis-color-buttons);
+    color:#000
+}
+
+.input_number {
+    display: flex;   
+    flex-direction: row-reverse;
+}
+
+.input_result {
+    width: 28.125rem;
+    height: 6rem;
+    background-color: #00000000;
+    border: none;
+    color:#fff
+}
+
+.display {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px 0;
+}
+
+.btn_calc_numb {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.btn_calc_numb:hover {
+    background: var(--secound-calculator-buttons);
+    color: var(--enphasis-color-buttons);
+}
+
+.btn_calc_emph {
+    background: var(--enphasis-color-buttons);
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn_calc_emph:hover {
+    background: var(--secound-calculator-buttons);
+    color: var(--enphasis-color-buttons);
+}
+
+.btn_calc_signal {
+    background: var(--secound-calculator-buttons);
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn_calc_signal:hover {
+    background: #fff;
+    color: var(--secound-calculator-buttons);
+}
